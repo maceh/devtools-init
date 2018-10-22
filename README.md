@@ -6,11 +6,11 @@ Steps to follow on any new PC/Computer that I'm setting up for my development
 
 ### Software List
 
-* PuTTY - https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-* Git w/Git Bash - https://git-scm.com/downloads
-* (Optional) VSCode - https://code.visualstudio.com/ (Win x64, User Installer)
-* (Optional) SourceTree - https://www.sourcetreeapp.com/
-* (Optional) Windows Subsystem for Linux w/ Ubuntu - https://docs.microsoft.com/en-us/windows/wsl/install-win10
+* PuTTY - <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>
+* Git w/Git Bash - <https://git-scm.com/downloads>
+* (Optional) VSCode - <https://code.visualstudio.com/> (Win x64, User Installer)
+* (Optional) SourceTree - <https://www.sourcetreeapp.com/>
+* (Optional) Windows Subsystem for Linux w/ Ubuntu - <https://docs.microsoft.com/en-us/windows/wsl/install-win10>
 
 ### Local Folder Structure / Heirarchy
 
@@ -91,9 +91,9 @@ Test this shortcut by launching it. You should get a prompt to type in your pass
 Sources
 
 * Github
-  * https://help.github.com/articles/connecting-to-github-with-ssh/
-  * https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
-* Wiki - https://en.wikipedia.org/wiki/Ssh-keygen
+  * <https://help.github.com/articles/connecting-to-github-with-ssh/>
+  * <https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/>
+* Wiki - <https://en.wikipedia.org/wiki/Ssh-keygen>
 
 ### Integrate with online repositories
 
@@ -122,11 +122,11 @@ ssh -T git@github.com
 References
 
 * Bitbucket
-  * https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html
-  * https://confluence.atlassian.com/bitbucket/troubleshoot-ssh-issues-271943403.html
+  * <https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html>
+  * <https://confluence.atlassian.com/bitbucket/troubleshoot-ssh-issues-271943403.html>
 * GitHub
-  * https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
-  * https://help.github.com/articles/testing-your-ssh-connection/
+  * <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
+  * <https://help.github.com/articles/testing-your-ssh-connection/>
 
 ### Usage Notes for SSH/Git (Windows)
 
@@ -162,7 +162,6 @@ Check that the key is added
 ssh-add -l
 ```
 
-
 ### Check your git config
 
 View config
@@ -194,8 +193,8 @@ git config user.email "your_email@example.com"
 
 #### Shellcheck (Windows)
 
-For Windows, grab the latest x86 stable build from https://github.com/koalaman/shellcheck
-(Alternatively https://shellcheck.storage.googleapis.com/index.html)
+For Windows, grab the latest x86 stable build from <https://github.com/koalaman/shellcheck>
+(Alternatively <https://shellcheck.storage.googleapis.com/index.html)>
 
 Inside settings.json, add the following, modifying the paths and exclusions as needed
 
