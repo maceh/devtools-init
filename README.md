@@ -41,7 +41,9 @@ ssh-keygen -t rsa -b 4096 -o -a 100 -C "your_email@example.com"
 ```
 
 Sources
- * https://help.github.com/articles/connecting-to-github-with-ssh/
- * https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
- * https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
- * https://help.github.com/articles/testing-your-ssh-connection/
+ * Github
+   * https://help.github.com/articles/connecting-to-github-with-ssh/
+   * https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+   * https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+   * https://help.github.com/articles/testing-your-ssh-connection/
+ * Wiki - https://en.wikipedia.org/wiki/Ssh-keygen
