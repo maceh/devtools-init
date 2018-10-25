@@ -30,9 +30,9 @@ Scripts to setup the folder structure (WSL/Bash)
 
 ```bash
 USERNAME=maceh
-mkdir -p ~/.ssh
-mkdir -p "~/workspace/github/$USERNAME/"
-mkdir -p "~/workspace/bitbucket-cloud/$USERNAME/"
+mkdir -p "$HOME/.ssh"
+mkdir -p "$HOME/workspace/github/$USERNAME/"
+mkdir -p "$HOME/workspace/bitbucket-cloud/$USERNAME/
 ```
 
 ### Windows Subsystem for Linux (WSL) / Ubuntu Configuration
@@ -83,7 +83,7 @@ shell:startup
 
 In this folder, create a shortcut to pageeant with additional parameters to the ppk key file you want to open automatically
 
-* Target - "C:\Program Files\PuTTY\pageant.exe" "C:\Users\USER\.ssh\id_rsa.ppk"
+* Target - "C:\Program Files\PuTTY\pageant.exe" "C:\Users\USER\\.ssh\id_rsa.ppk"
 * Start In - "C:\Program Files\PuTTY\"
 
 Test this shortcut by launching it. You should get a prompt to type in your passphrase.
@@ -173,8 +173,16 @@ git config -l
 If needed, set global user.name and user.email
 
 ```bash
-git config user.name "FIRST_NAME LAST_NAME"
-git config user.email "your_email@example.com"
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "your_email@example.com"
+```
+
+### Test cloning a project
+
+e.g. in Git Bash
+
+```bash
+git clone git@bitbucket.org:maceh/devtools-init.git
 ```
 
 ## Visual Studio Code Setup
@@ -235,20 +243,20 @@ Example
 ```json
   "shellLauncher.shells.windows": [
     {
-      "shell": "C:\\Windows\\System32\\cmd.exe",
-      "label": "cmd"
-    },
-    {
-      "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-      "label": "PowerShell"
-    },
-    {
       "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
       "label": "Git bash"
     },
     {
       "shell": "C:\\Windows\\System32\\bash.exe",
       "label": "WSL Bash"
+    },
+    {
+      "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "label": "PowerShell"
+    },
+    {
+      "shell": "C:\\Windows\\System32\\cmd.exe",
+      "label": "cmd"
     }
   ]
 ```
