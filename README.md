@@ -185,6 +185,31 @@ e.g. in Git Bash
 git clone git@bitbucket.org:maceh/devtools-init.git
 ```
 
+### Setup plink.exe + Setup GIT_SSH Environment Variable (Windows)
+
+These steps are needed for VSCode's built in Git integration to work, without having to go into Git Bash etc.
+
+In PowerShell, run plink and get it to trust these remote servers
+
+32-bit PuTTY
+
+```powershell
+& 'C:\Program Files (x86)\PuTTY\plink.exe' git@github.com
+& 'C:\Program Files (x86)\PuTTY\plink.exe' git@bitbucket.org
+```
+
+64-bit PuTTY
+
+```powershell
+& 'C:\Program Files\PuTTY\plink.exe' git@github.com
+& 'C:\Program Files\PuTTY\plink.exe' git@bitbucket.org
+```
+
+In Windows 10, search the Start Menu for "Edit environment variables for your account"
+
+Create a new variable called 'GIT_SSH' pointing at plink.exe from your PuTTY installation.
+For example if you have 64-bit PuTTY installed, this should point at 'C:\Program Files\PuTTY\plink.exe'
+
 ## Visual Studio Code Setup
 
 ### Extensions
@@ -202,7 +227,7 @@ git clone git@bitbucket.org:maceh/devtools-init.git
 #### Shellcheck (Windows)
 
 For Windows, grab the latest x86 stable build from <https://github.com/koalaman/shellcheck>
-(Alternatively <https://shellcheck.storage.googleapis.com/index.html)>
+(Alternatively <https://shellcheck.storage.googleapis.com/index.html>)
 
 Inside settings.json, add the following, modifying the paths and exclusions as needed
 
