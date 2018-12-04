@@ -316,6 +316,6 @@ Example Config (unsure if this is auto-generated?) in settings.json
         "suppressWelcomeNotice": true
     },
     "gitlens.keymap": "alternate",
-    "gitlens.historyExplorer.enabled": true,
+    "gitlens.historyExplorer.enabled": true
 }
 ```
