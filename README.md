@@ -32,7 +32,7 @@ Scripts to setup the folder structure (WSL/Bash)
 USERNAME=maceh
 mkdir -p "$HOME/.ssh"
 mkdir -p "$HOME/workspace/github/$USERNAME/"
-mkdir -p "$HOME/workspace/bitbucket-cloud/$USERNAME/
+mkdir -p "$HOME/workspace/bitbucket-cloud/$USERNAME/"
 ```
 
 ### Windows Subsystem for Linux (WSL) / Ubuntu Configuration
@@ -222,6 +222,11 @@ For example if you have 64-bit PuTTY installed, this should point at 'C:\Program
 * shellcheck (timonwong.shellcheck)
 * markdownlint (davidanson.vscode-markdownlint)
 
+### Preferred Themes
+
+* Material Theme (equinusocio.vsc-material-theme) - Palenight High Contrast
+* Material Icon Theme (pkief.material-icon-theme) - Palenight
+
 ### Extension Configuration
 
 #### Shellcheck (Windows)
@@ -229,15 +234,19 @@ For example if you have 64-bit PuTTY installed, this should point at 'C:\Program
 For Windows, grab the latest x86 stable build from <https://github.com/koalaman/shellcheck>
 (Alternatively <https://shellcheck.storage.googleapis.com/index.html>)
 
+Save shellcheck to a location on your computer, which you can then configure the path to.
+
 Inside settings.json, add the following, modifying the paths and exclusions as needed
 
 ```json
+{
     "shellcheck.executablePath": "F:\\Programs\\Shellcheck\\shellcheck-latest.exe",
     "shellcheck.exclude": [
         "SC1017"
     ],
     "shellcheck.run": "onSave",
-    //"shellcheck.useWSL": true
+    "shellcheck.useWSL": false
+}
 ```
 
 Shellcheck can be configured to use the WSL version if you have it installed in WSL Bash
@@ -266,6 +275,7 @@ Search settings.json (User Settings) to see these default paths. These can be ov
 Example
 
 ```json
+{
   "shellLauncher.shells.windows": [
     {
       "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
@@ -284,6 +294,7 @@ Example
       "label": "cmd"
     }
   ]
+}
 ```
 
 #### GitLens
@@ -291,6 +302,7 @@ Example
 Example Config (unsure if this is auto-generated?) in settings.json
 
 ```json
+{
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -305,4 +317,5 @@ Example Config (unsure if this is auto-generated?) in settings.json
     },
     "gitlens.keymap": "alternate",
     "gitlens.historyExplorer.enabled": true,
+}
 ```
